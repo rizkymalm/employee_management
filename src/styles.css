@@ -753,3 +753,194 @@ ul.column {
   width: calc(100% - 20px);
 }
 /*-end-*/
+
+/*style form*/
+input[type="text"],
+input[type="number"],
+input[type="search"],
+input[type="password"],
+input[type="email"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="url"],
+textarea,select{
+  border: 1px solid #cccccc;
+  border-radius:5px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border linear 0.2s, box-shadow linear 0.2s;
+     -moz-transition: border linear 0.2s, box-shadow linear 0.2s;
+       -o-transition: border linear 0.2s, box-shadow linear 0.2s;
+          transition: border linear 0.2s, box-shadow linear 0.2s;
+		  padding:7px 10px;
+		  color:#666;		
+}
+textarea{
+	font-family:Verdana, Geneva, sans-serif;
+}
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="url"]:focus,
+textarea:focus,
+select:focus{
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+
+input[type="text"].oneline,
+input[type="search"].oneline,
+input[type="password"].oneline,
+input[type="number"].oneline
+{
+	border:none;
+	border-bottom:1px solid #666666;
+	padding: 10px 5px;
+  -webkit-box-shadow:none;
+     -moz-box-shadow:none;
+          box-shadow:none;
+}
+input[type="text"].oneline:focus,
+input[type="search"].oneline:focus,
+input[type="password"].oneline:focus,
+input[type="number"].oneline
+{
+	-webkit-box-shadow:none;
+		-moz-box-shadow:none;
+			box-shadow:none;
+			 outline: none;
+}
+input[type="submit"],
+input[type="reset"],
+button{
+	cursor:pointer;
+}
+label.left-icon{
+	height:auto;
+	float:left;
+}
+label.left-icon img{
+	width:20px;
+	height:20px;
+	margin:5px;
+	float:left;
+	position:relative;
+	z-index:100;
+}
+label.left-icon input[type="text"],
+label.left-icon input[type="password"],
+label.left-icon input[type="search"]
+{
+	z-index:99;
+	position:relative;
+	margin-left:-30px;
+	float:left;
+	padding-left:25px;
+}
+
+label.left-icon select{
+	padding:5px 5px 5px 25px;
+}
+
+
+label.left-icon input[type="text"].oneline,
+label.left-icon input[type="search"].oneline,
+label.left-icon input[type="password"].oneline{
+	padding-left:30px;
+}
+
+
+
+
+label.right-icon{
+	height:auto;
+	float:right;
+	position: relative;
+}
+label.right-icon img{
+	width: 20px;
+    height: 20px;
+    float: right;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 10px;
+    margin: auto;
+    z-index: 100;
+}
+label.right-icon input[type="text"],
+label.right-icon input[type="password"],
+label.right-icon input[type="search"],
+label.right-icon input[type="email"]
+{
+	z-index:99;
+	position:relative;	
+	float:right;	
+	text-align: right;
+	padding-right: 28px;
+}
+
+label.right-icon select{
+	padding:5px 5px 5px 25px;
+}
+
+
+label.right-icon input[type="text"].oneline,
+label.right-icon input[type="search"].oneline,
+label.right-icon input[type="password"].oneline{
+	padding-left:30px;
+}
+
+
+
+
+input[type="text"].invisible,
+input[type="search"].invisible,
+input[type="password"].invisible,
+input[type="email"].invisible,
+input[type="datetime"].invisible,
+input[type="date"].invisible,
+input[type="url"].invisible,
+textarea.invisible,
+select.invisible{
+	border:none;
+	box-shadow:none;
+  -webkit-transition: none;
+     -moz-transition: none;
+       -o-transition: none;
+          transition: none;
+}
+
+
+
+input[type="text"].invisible:focus,
+input[type="search"].invisible:focus,
+input[type="password"].invisible:focus,
+input[type="email"].invisible:focus,
+input[type="datetime"].invisible:focus,
+input[type="date"].invisible:focus,
+input[type="url"].invisible:focus,
+textarea.invisible:focus,
+select.invisible:focus{
+  -webkit-box-shadow: none !important;
+     -moz-box-shadow: none !important;
+          box-shadow: none !important;
+  -webkit-transition: none !important;
+     -moz-transition: none !important;
+       -o-transition: none !important;
+          transition: none !important;
+          outline: 0;
+}
+.noradius{
+	border-radius: 0px !important;
+}
+/*--end style form----*/

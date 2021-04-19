@@ -1,13 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { ViewportScroller } from '@angular/common';
 import { EmployeeService } from "../employee.service";
+
+
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  selector: 'app-create',
+  templateUrl: './create.component.html',
+  styleUrls: ['./create.component.css']
 })
-export class HomeComponent implements OnInit {
-  title = 'Homepage';
+export class CreateComponent implements OnInit {
+
+  title = 'Create Employee';
   opened = false
   
   constructor(private viewportScroller: ViewportScroller) { }
@@ -17,6 +20,9 @@ export class HomeComponent implements OnInit {
   }
   getMargin(){
     return this.opened === true ? '300px' : '0%'
+  }
+  createEmployee(){
+    
   }
 
   ngOnInit(): void {

@@ -13,11 +13,15 @@ import {MatTableModule} from '@angular/material/table';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatExpansionModule} from '@angular/material/expansion';
 
+import { HttpClientModule } from "@angular/common/http";
+import { CreateComponent } from './create/create.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    HomeComponent
+    HomeComponent,
+    CreateComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +32,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     SidebarModule.forRoot(),
     MatTableModule,
     MatTabsModule,
-    MatExpansionModule
+    MatExpansionModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

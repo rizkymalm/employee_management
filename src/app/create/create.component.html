@@ -46,45 +46,44 @@
                     </ul>
                 </div>
             </div>
-            <div class="content full-length column">
-                <div class="cols-12" style="height: 100px;"></div>
-                <div class="cols-3" style="height: 10px;"></div>
-                    <div class="full-length cols-6 containt" id="contentDetail" style="overflow-x: auto; padding-bottom: 40px;">
-                        <div class="headtitle trans" style="margin-bottom: 0;">
-                            <p class="size-head4 nopad">Control</p>
+            <div class="content cols-12" style="height: 100px;"></div>
+            <div class="content cols-3" style="height: 10px;"></div>
+            <div class="content cols-6 column containt">
+                <form class="control">
+                    <div class="full-length" id="contentDetail" style="overflow-x: auto; padding-bottom: 40px;">
+                        <div class="headtitle trans">
+                            <p class="size-head4 nopad">Employee</p>
+                            <p class="size-cute nopad">Create Employee</p>
                         </div>
-                        <div class="list-control containt" style="border-bottom: none;">
-                            <div class="list-control-box spc-rl">
-                                <span class="size-std">Show By Group</span>
-                                <select name="" id="kanwil" class="size-std">
-                                    <option value="all">-- Select Group --</option>
-                                </select>
-                            </div>
-                            <div class="list-control-box spc-rl">
-                                <input type="search" name="search" ng-model="search" placeholder="Search">
-                            </div>
-                            <div class="list-control-box size-std spc-rl">
-                                <button type="submit" class="myButton-submit">Show</button>
-                                <button routerLink="/create" class="myButton-submit">Create New</button>
-                            </div>
-                        </div>
-                        <form class="control">
-                            <table class="size-std full-tables">
-                                <tr>
-                                    <th style="text-align: left; cursor: pointer;">Username</th>
-                                    <th style="text-align: left; cursor: pointer;">Full Name</th>
-                                    <th style="text-align: left; cursor: pointer;">Email</th>
-                                </tr>
-                                <tr>
-                                    <td>Username</td>
-                                    <td>Full Name</td>
-                                    <td>Email</td>
-                                </tr>
-                            </table>
-                        </form>
+                        <table class="full-length size-std basic-tables unbordered" cellpadding="8" cellspacing="8">
+                            <tr>
+                                <td style="text-align: right; width: 50%;">*Username</td>
+                                <td>
+                                    <input type="text" name="username" class="frm-std size-std" style="border-radius: 0; width: 80%;" required="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: right;">*First Name</td>
+                                <td>
+                                    <input type="text" name="firstname" class="frm-std size-std" style="border-radius: 0; width: 80%;" required="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="text-align: right;">*Last Name</td>
+                                <td>
+                                    <input type="text" name="lastname" class="frm-std size-std" style="border-radius: 0; width: 80%;" required="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" style="text-align: center;">
+                                    <button (click)="createEmployee()">Save</button>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
-                <div class="cols-3" style="height: 10px;"></div>
+                </form>
             </div>
+            <div class="content cols-3" style="height: 10px;"></div>
         </div>
     </div>
 </div>
