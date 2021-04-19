@@ -75,10 +75,10 @@
                                     <th style="text-align: left; cursor: pointer;">Full Name</th>
                                     <th style="text-align: left; cursor: pointer;">Email</th>
                                 </tr>
-                                <tr>
-                                    <td>Username</td>
-                                    <td>Full Name</td>
-                                    <td>Email</td>
+                                <tr *ngFor="let employee of employee">
+                                    <td>{{employee.username}}</td>
+                                    <td>{{employee.firstName+" "+employee.lastName}}</td>
+                                    <td>{{employee.email}}</td>
                                 </tr>
                             </table>
                         </form>

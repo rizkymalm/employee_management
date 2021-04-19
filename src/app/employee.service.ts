@@ -11,4 +11,8 @@ export class EmployeeService {
   createList(fullname: string){
     this.webReqService.post('api/listuser', { fullname });
   }
+
+  getEmployee(){
+    return this.webReqService.get("api/listuser")
+  }
 }

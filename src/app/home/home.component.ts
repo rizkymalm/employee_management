@@ -9,8 +9,9 @@ import { EmployeeService } from "../employee.service";
 export class HomeComponent implements OnInit {
   title = 'Homepage';
   opened = false
+  employee: any
   
-  constructor(private viewportScroller: ViewportScroller) { }
+  constructor(private viewportScroller: ViewportScroller, private employeeService: EmployeeService) { }
   toggleSidebar(){
     this.opened = !this.opened
     return this.opened
@@ -20,6 +21,9 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.employeeService.getEmployee().subscribe((employee: any[]) => {
+      this.employee = employee;
+    })
   }
 
 }
