@@ -1,0 +1,121 @@
+.wrapper{
+    background-color: #F1F4F7;
+}
+::ng-deep .ng-sidebar{
+    background-color: #ffffff;
+    width: 300px;
+    height: 100%;
+    box-shadow: 0 0 0.8em rgb(85, 85, 85, .28) !important;
+    z-index: 100;
+}
+li{
+    list-style-type: none;
+}
+.head{
+    padding: 0;
+    width: 100%;
+    position: relative;
+}
+.gradientr{
+    background: linear-gradient(to right, #0094D8, #00AFA2);
+    -webkit-background: linear-gradient(to right, #0094D8, #00AFA2);
+    -o-background: linear-gradient(to right, #0094D8, #00AFA2);
+    -moz-background: linear-gradient(to right, #0094D8, #00AFA2);
+}
+.top-icon-menu{
+    position: absolute;
+    right: 30px;
+    top: 10%;
+    bottom: 10%;
+    height: 80%;
+    z-index: 98;
+}
+.top-icon-menu ul li{
+    float: left;
+    margin: 3px 0;
+    padding: 8px;
+    color: #ffffff;
+    cursor: pointer;
+}
+.top-icon-menu ul li:hover{
+    background: #299a9a;
+}
+.top-icon-menu ul li img{
+    vertical-align: middle;
+}
+.box-arrow{
+    width: 20px;
+    height: 20px;
+    box-sizing: content-box;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    background: rgba(255, 255, 255, .1);
+    border-radius: 4px;
+    padding: 2px 0 5px 10px;
+    cursor: pointer;
+    color: #ffffff;
+    font-weight: bolder;
+    z-index: 99;
+}
+
+.containt{background: #ffffff; padding: 15px; position: relative;color: #959a9c;}
+/*List*/
+.list-control{
+    width: 100%;
+    padding: 10px 20px;
+    position: relative;
+    border-bottom: 1px solid #dfe8f1;
+    float: left;
+  }
+  .list-control-box{position: relative; float: left;}
+  .valchecked{padding: 0 15px;}
+  .list-control button.btn-list-control{
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    padding: 5px 12px;
+    position: relative;
+  }
+  .icon-list-control{
+    height: 15px;
+    vertical-align: middle;
+    margin-left: 5px;
+  }
+  .list-control button.btn-list-control:hover{
+    border: 1px solid #dfe8f1;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+  .list-control .box-list-control{
+    display: none;
+    left: 0;
+    right: 0;
+    text-align: left;
+    max-height: 300px;
+    overflow: auto;
+  }
+  .search-field{
+    border-bottom: 1px solid #dfe8f1;
+    padding: 10px;
+  }
+  .search-field-frm{
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .box-list-control ul li input[type="checkbox"]{
+    vertical-align: middle;
+  }
+
+
+.mat-expansion-panel{
+    padding: 10px 5px;
+    border: 1px solid #ffffff;
+}
+.mat-expansion-panel:hover{
+    border: 1px solid #DFE8F1;
+}
+
+.mat-expansion-panel ul li{
+    padding: 8px 15px;
+}

@@ -1,1 +1,74 @@
-<p>home works!</p>
+<title>{{title}}</title>
+
+<div class="wrapper" style="position: relative; margin: 0; width: 100%; height: 100%;">
+    <div class="full-length column" style="height: 100%;">
+        <div style="width: 300px; position: fixed; z-index: 99; height: 100%;">
+            <ng-sidebar-container>
+                <ng-sidebar [opened]="opened">
+                    <mat-expansion-panel disabled class="spc-tb">
+                        <mat-expansion-panel-header>
+                        <mat-panel-title>
+                            <b class="size-std dark-color">Destination</b>
+                        </mat-panel-title>
+                        <mat-panel-description>
+                        </mat-panel-description>
+                        </mat-expansion-panel-header>
+                    </mat-expansion-panel>
+                    <mat-accordion class="spc-tb">
+                        <mat-expansion-panel>
+                            <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                <b class="size-std dark-color">Employee</b>
+                            </mat-panel-title>
+                            <mat-panel-description>
+                            </mat-panel-description>
+                            </mat-expansion-panel-header>
+                            <ul class="size-std nopad">
+                                <li><a href="">List</a></li>
+                                <li><a href="">Create</a></li>
+                            </ul>
+                        </mat-expansion-panel>
+                    </mat-accordion>
+                </ng-sidebar>
+            </ng-sidebar-container>
+        </div>
+        <div class="cols-12 column" style="min-height: 100%;">
+            <div ng-sidebar-content class="head gradientr" style="min-height: 50px; padding: 0 20px;">
+                <div class="box-arrow" (click)="toggleSidebar()" [ngStyle]="{'marginLeft': getMargin()}">
+                    {{ opened === true ? '&lt;' : ">" }}
+                </div>
+                <div class="top-icon-menu desk delay">
+                    <ul class="nopad" style="overflow: hidden;">
+                        <li class="size-std option-click notifpopup" style="position: relative;">
+                            <img src="assets/images/bell.png" style="display: inline-block; height: 25px;">
+                        </li>
+                        <li class="size-std option-click" ><img src="assets/images/profile.png" style="display: inline-block; height: 25px;">&nbsp;&nbsp;John Doe</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content full-length column containt">
+                <div class="headtitle trans" style="margin-bottom: 0;">
+                    <p class="size-head4 nopad">Control</p>
+                </div>
+                <form class="control">
+                    <div class="list-control" style="border-bottom: none;">
+                        <div class="list-control-box spc-rl">
+                            <span class="size-std">Show By Group</span>
+                            <select name="" id="kanwil" class="size-std" onchange="getAreaByKanwil(this)">
+                                <option value="all">-- Select Kanwil --</option>
+                            </select>
+                        </div>
+                        <div class="list-control-box spc-rl">
+                            <input type="search" name="search" ng-model="search" placeholder="Search">
+                        </div>
+                        <div class="list-control-box size-std spc-rl">
+                            <button type="submit" class="myButton-submit">Show</button>
+                            <button type="reset" class="myButton-submit">Clear</button>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
