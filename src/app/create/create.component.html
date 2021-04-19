@@ -59,13 +59,13 @@
                             <tr>
                                 <td style="text-align: right; width: 50%;">*Username</td>
                                 <td>
-                                    <input type="text" name="username" class="frm-std size-std" style="border-radius: 0; width: 80%;" required="">
+                                    <input #employeeUsername type="text" name="username" class="frm-std size-std" style="border-radius: 0; width: 80%;" required="">
                                 </td>
                             </tr>
                             <tr>
                                 <td style="text-align: right;">*First Name</td>
                                 <td>
-                                    <input type="text" name="firstname" class="frm-std size-std" style="border-radius: 0; width: 80%;" required="">
+                                    <input #employeeFirstname type="text" name="firstname" class="frm-std size-std" style="border-radius: 0; width: 80%;" required="">
                                 </td>
                             </tr>
                             <tr>
@@ -76,7 +76,7 @@
                             </tr>
                             <tr>
                                 <td colspan="2" style="text-align: center;">
-                                    <button (click)="createEmployee()">Save</button>
+                                    <button (click)="createEmployee(employeeUsername.value, employeeFirstname.value)">Save</button>
                                 </td>
                             </tr>
                         </table>

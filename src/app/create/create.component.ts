@@ -13,7 +13,7 @@ export class CreateComponent implements OnInit {
   title = 'Create Employee';
   opened = false
   
-  constructor(private viewportScroller: ViewportScroller) { }
+  constructor(private viewportScroller: ViewportScroller, private employeeService: EmployeeService) { }
   toggleSidebar(){
     this.opened = !this.opened
     return this.opened
@@ -21,8 +21,10 @@ export class CreateComponent implements OnInit {
   getMargin(){
     return this.opened === true ? '300px' : '0%'
   }
-  createEmployee(){
-    
+  createEmployee(username: string, firstname: string){
+    this.employeeService.createEmployee(username, firstname).subscribe((response: any) =>{
+      console.log(response)
+    })
   }
 
   ngOnInit(): void {

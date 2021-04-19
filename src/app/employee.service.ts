@@ -8,8 +8,8 @@ export class EmployeeService {
 
   constructor(private webReqService: WebRequestService) { }
 
-  createList(fullname: string){
-    this.webReqService.post('api/listuser', { fullname });
+  createEmployee(username: string, firstname: string){
+    return this.webReqService.post('api/createuser', { username, firstname });
   }
 
   getEmployee(){
